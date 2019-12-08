@@ -1,0 +1,15 @@
+{
+  "name": "spotify-for-movies",
+  "version": "1.0.0",
+  "description": "Convert movies into mp3 playlist",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Janjan Medina",
+  "license": "ISC",
+  "dependencies": {
+    "node-id3": "^0.1.13",
+    "video-format-converter": "^1.1.0"
+  }
+}
