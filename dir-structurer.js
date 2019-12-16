@@ -31,7 +31,7 @@ const structure = function(option = defaultOption, dir = '.', filestruct = { typ
       }
       if (option.filter !== undefined) {
         if (Array.isArray(option.filter) && option.filter.length !== 0) {
-          if (option.filter.includes(fileObject.type)) {
+          if (option.filter.map(filter => filter.toLowerCase()).includes(fileObject.type.toLowerCase())) {
             filestruct[filename] = fileObject
           } else return
         } else {
