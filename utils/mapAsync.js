@@ -1,9 +1,7 @@
-const mapAsync = fn => arr => {
-  return arr.reduce(async (accumulatorPromise, currentValue, index) => {
+Array.prototype.mapAsync = function(fn) {
+  return this.reduce(async (accumulatorPromise, currentValue, index) => {
     return accumulatorPromise.then(() => fn(currentValue, index));
   }, Promise.resolve());
-};
+}
 
-module.exports = {
-  mapAsync
-};
+module.exports = Array

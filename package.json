@@ -9,6 +9,7 @@
   "author": "Janjan Medina",
   "license": "ISC",
   "dependencies": {
+    "cli-spinner": "^0.2.10",
     "fluent-ffmpeg": "^2.1.2",
     "node-id3": "^0.1.13"
   }
