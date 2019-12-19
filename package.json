@@ -2,15 +2,28 @@
   "name": "spotify-for-movies",
   "version": "1.0.0",
   "description": "Convert movies into mp3 playlist",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
   },
   "author": "Janjan Medina",
   "license": "ISC",
   "dependencies": {
     "cli-spinner": "^0.2.10",
+    "commander": "^4.0.1",
     "fluent-ffmpeg": "^2.1.2",
+    "glob": "^7.1.6",
     "node-id3": "^0.1.13"
+  },
+  "devDependencies": {
+    "husky": "^3.1.0",
+    "prettier": "^1.19.1",
+    "pretty-quick": "^2.0.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
   }
 }
